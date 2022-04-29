@@ -4,9 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iteraciones</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>JavaScript</title>
 </head>
 <body>
+    <div class="container py-2">
+        <p class="lead">Ingrese usuario</p>
+        <form>
+            <input id="nombre" type="text" placeholder="Ingresa nombre" class="form-control my-2">
+            <input id="edad" type="text" placeholder="Ingresa edad" class="form-control my-2">
+            <button id="boton" class="btn btn-success" type="reset">Agregar</button>
+        </form>
+    </div>
+    <div class="container">
+        <table class="table" id="tabla">
+            <thead class="thead-inverse">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
     
     <form>
         <p>Tabla de: <input type="text" id="numero"/>
@@ -22,5 +41,6 @@
     </form>
 
     <script src="./index.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
 </body>
 </html>
