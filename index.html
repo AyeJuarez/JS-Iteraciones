@@ -9,8 +9,8 @@
 </head>
 <body>
     <div class="container py-2 my-2 col-2">
-        <p class="lead">Ingrese usuario</p>
-        <form>
+        <p onclick="clickIngreseUsuario()" id="titulo" class="lead">Ingrese usuario</p>
+        <form id="formulario">
             <input id="nombre" type="text" placeholder="Ingresa nombre" class="form-control my-2">
             <input id="edad" type="text" placeholder="Ingresa edad" class="form-control my-2">
             <button id="boton" class="btn btn-success" type="reset" onclick="capturar()">Agregar</button>

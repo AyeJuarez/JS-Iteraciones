@@ -7,6 +7,7 @@ let nombre = prompt("Ingresa tu Nombre");
         alert("Ingresaste un nombre invalido");
     }
 
+/* Formulario 
 function capturar(){
     function Persona (nombre,edad){
         this.nombre=nombre;
@@ -29,6 +30,28 @@ function agregar(){
     console.log(baseDatos);
     document.getElementById("tabla").innerHTML += '<tbody><td>' + nuevoSujeto.nombre + '</td><td>' + nuevoSujeto.edad + '</td></tbody>';
 }
+*/
+// Evento
+
+function clickIngreseUsuario () {
+    console.log("El usuario hizo click en el Inicio de la pagina");
+}
+
+let IngreseUsuario2 = document.getElementById("titulo");
+
+IngreseUsuario2.addEventListener("click, clickIngreseUsuario");
+
+let form = document.querySelector("#formulario");
+
+const enviarFormulario = (event) => {
+    event.prevent.Default();
+    console.log(event.target.nombre, event.target.edad)
+};
+
+form.addEventListener("submit", enviarFormulario);
+
+
+//Calculadora - Tabla 
 
 function generarTabla(numero) {
     let num = parseInt(numero);
@@ -61,3 +84,4 @@ function sumarNumero(numero) {
 
     document.getElementById("resultado").innerText = resultado;
 }
+
