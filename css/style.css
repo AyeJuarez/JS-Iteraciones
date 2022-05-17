@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Sansita+Swashed:wght@300&family=Zen+Maru+Gothic&display=swap');
+
+* {
+    margin: 0;
+}
+
+form {
+    padding: 20px;
+    box-shadow: 1px 1px 10px rgb(0 0 0 / 20%);
+    background-color: aliceblue;
+}
+
+body {
+    place-items: center;
+    display: grid;
+    background: url(/img/paisaje.jpg);
+    min-height: 100vh;
+}
+
+main {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, .7);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 7px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: #e7e6e6;
+}
+
+input [ type= button ] {
+    border: 0px;
+    background-color: #a5a0a0;
+    color: #fff;
+    padding: 7px 15px;
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+.mitad {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mitad input {
+    width: 48%;
+}
+
+.completo input {
+    width: 100%;
+}
+
+
+

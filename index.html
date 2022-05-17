@@ -5,41 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <title>JavaScript</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>JavaScript-Juarez Ayelen</title>
 </head>
 <body>
-    <div class="container py-2 my-2 col-2">
-        <p onclick="clickIngreseUsuario()" id="titulo" class="lead">Ingrese usuario</p>
-        <form id="formulario">
-            <input id="nombre" type="text" placeholder="Ingresa nombre" class="form-control my-2">
-            <input id="edad" type="text" placeholder="Ingresa edad" class="form-control my-2">
-            <button id="boton" class="btn btn-success" type="reset" onclick="capturar()">Agregar</button>
+    <main> 
+        <form action="">
+            <h1>Registro</h1>
+            <div class="mitad">
+                <input type="text" id="nombre" placeholder="Nombre">
+                <input type="text" id="apellido" placeholder="Apellido">
+            </div>
+            <div class="completo">
+                <input type="email" id="email" placeholder="Email">
+            </div>
+            <div class="completo">
+                <input type="password" id="pass" placeholder="Password">
+            </div>
+            <div class="boton" onclick="dataRead">
+                <input type="button" value="Enviar">
+            </div>
         </form>
-    </div>
-    <div class="container my-2 col-2">
-        <table class="table" id="tabla">
-            <thead class="thead-inverse">
-                <tr>
-                    <th>Nombre</th>
-                    <th>Edad</th>
-                </tr>
-            </thead>
-        </table>
-    </div>
-    
-    <form>
-        <p>Tabla de: <input type="text" id="numero"/>
-        <button type="button" onclick="generarTabla(numero.value)">Generar</button></p>
-    </form>
-
-    <table border="1" id="tablas"></table>
-
-    <form>
-        <p>Sumar del 1 al: <input type="text" id="numeroSuma"/> 
-        <button type="button" onclick="sumarNumero(numeroSuma.value)">Sumar</button></p>
-        <p>Resultado: <div id="resultado"></div></p>
-    </form>
-
+    </main>
     <script src="./index.js"></script>
     <script src="./js/bootstrap.bundle.js"></script>
 </body>
