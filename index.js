@@ -1,12 +1,12 @@
-let main = function(){
+/*let main = function () {
     captura_boton();
 }
 
-let captura_boton = function(){
+let captura_boton = function () {
     document.querySelector(".boton input").setAttribute("onclick", "dataRead()");
 }
 
-let dataRead = function(){
+let dataRead = function () {
     console.log("Datos Del Formulario");
     console.log(
         document.querySelector("#nombre").value,
@@ -26,15 +26,40 @@ let dataRead = function(){
     save_localStorage(myObject);
 };
 
-let save_localStorage = function(myObj) {
+let save_localStorage = function (myObj) {
     localStorage.setItem("dato", JSON.stringify(myObj));
 }
 
-let read_localStorage = function(){
+let read_localStorage = function () {
     let dato = localStorage.getItem("dato");
     console.log(dato);
     let myObject = JSON.parse(dato);
     console.log(myObject);
 }
 
-main();
+main();*/
+
+const boton = document.querySelector('#formulario');
+boton.addEventListener('submit', aplicar);
+
+function aplicar(e){
+    e.preventDefault();
+    const valor = document.querySelector('#nombre').value;
+
+    if (valor ===""){
+        Swal.fire({
+            title: 'Error',
+            text: 'El Campo es Obligatorio',
+            icon: 'error',
+            confirmButtonText: 'OK'
+        })
+    } else {
+        Swal.fire({
+            title: `${valor}!`,
+            text: 'Bienvenid@, gracias por ingresar!!',
+            icon: 'success',
+            confirmButtonText: 'OK'
+        })
+    }    
+}
+

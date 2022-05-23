@@ -10,7 +10,7 @@
 </head>
 <body>
     <main> 
-        <form action="">
+        <form action="" id="formulario">
             <h1>Registro</h1>
             <div class="mitad">
                 <input type="text" id="nombre" placeholder="Nombre">
@@ -23,10 +23,11 @@
                 <input type="password" id="pass" placeholder="Password">
             </div>
             <div class="boton" onclick="dataRead">
-                <input type="button" value="Enviar">
+                <input type="submit" value="Enviar" id="btn">
             </div>
         </form>
     </main>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./index.js"></script>
     <script src="./js/bootstrap.bundle.js"></script>
 </body>
