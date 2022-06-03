@@ -39,7 +39,7 @@ let read_localStorage = function () {
 
 main();*/
 
-const boton = document.querySelector('#formulario');
+/*const boton = document.querySelector('#formulario');
 boton.addEventListener('submit', aplicar);
 
 function aplicar(e){
@@ -61,5 +61,19 @@ function aplicar(e){
             confirmButtonText: 'OK'
         })
     }    
+}
+*/
+
+// Fetch
+let formulario
+
+const dataRead = async () => {
+    
+    let response = await fetch("./api.json")
+    let data = await response.json()
+
+    formulario = data
+    console.log(response)
+
 }
 
